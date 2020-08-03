@@ -1,0 +1,18 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "OtherParameters": {
+            "value": "otherValue"
+        },
+        "adminpassword": {
+            "reference": {
+                "keyVault": {
+                    "id": "/subscriptions/7d4788dd-25cb-4cf5-9802-e065e42b85cb/resourceGroups/workshop/providers/Microsoft.KeyVault/vaults/llaveworkshop715"
+                },
+                "secretName": "adminpassword"
+            }
+        }
+    }
+   
+}
