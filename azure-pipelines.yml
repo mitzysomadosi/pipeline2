@@ -19,6 +19,5 @@ steps:
     resourceGroupName: 'pipeline2'
     location: 'Central US'
     templateLocation: 'Linked artifact'
-    csmFile: 'templateVM.json'
-    csmParametersFile: 'templateVM.parameters.json'
+    csmFile: 'templateVnet.json'
     deploymentMode: 'Incremental'
